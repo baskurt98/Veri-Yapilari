@@ -1,0 +1,7 @@
+11 -)       motor           [ 50 ]
+12 -)       araba           [ 100 ]
+13 -)       ceket           [ 10 ]
+14 -)       kazak           [ 50 ]
+15 -)       corap           [ 100 ]
+16 -)       mont            [ 60 ]
+17 -)       canta           [ 90 ]

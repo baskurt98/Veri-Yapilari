@@ -1,0 +1,4 @@
+14 -)        denek4         denek          12345678974
+16 -)        denek8         denek          12345678974
+17 -)        denek7         denek          22211133345
+18 -)        denek8         denek          12345678974
