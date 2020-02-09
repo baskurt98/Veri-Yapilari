@@ -10,27 +10,27 @@ struct tree{
 
 tree *arama(tree *r, int deger)
 {
-	if (r != NULL) // öncelikle aðaçta eleman olup olmadýðý kontrol edildi.
+	if (r != NULL) // oncelikle agacta eleman olup olmadýgý kontrol edildi.
 	{
-		if (r->data == deger) // kök aranýlan deger ise sonuc bulundu
+		if (r->data == deger) // root aranilan deger ise sonuc bulundu
 		{
 			cout << "Aranilan deger mevcut " << endl << endl;
 			system("pause");
 			return r;
 		}
-		else // aranýlan eleman kök deðil ise...
+		else // aranilan eleman root degil ise...
 		{
-			if (r->data < deger) // Aranýlan eleman kökten büyük ise sað dallarda arama yapýldý.
+			if (r->data < deger) // Aranilan eleman roottan buyuk ise sag dallarda arama yapildi.
 				arama(r->right, deger);
 			else
-				arama(r->left, deger); // Aranýlan eleman kökten küçük ise sol dallarda arama yapýldý.
+				arama(r->left, deger); // Aranilan eleman roottan kucuk ise sol dallarda arama yapildi.
 		}
 	}
-		return NULL; // Aðaçta eleman yok ise hiç bir iþlem yapýlmadý.
+		return NULL; // Agacta eleman yok ise hic bir islem yapilmadi.
 }
 tree *ekle(tree *r, int deger) 
 {
-	if (r == NULL) // Eðer aðaç boþ ise yeni aðaç oluþturuldu.
+	if (r == NULL) // Eger agac bos ise yeni agag olusturuldu.
 	{
 		r = new tree();
 		r->data = deger;
@@ -38,16 +38,16 @@ tree *ekle(tree *r, int deger)
 		r->right = NULL;
 	}
 
-	else{ // Aðaç dolu ise girilen deger kökten büyük veya küçük olma durumuna göre eklemek için kontrol ettik 
-		if (r->data <= deger) //kökten büyük veya eþit ise sað dala yönlendirip recursive fonksiyon kullanarak ekleme yaptýk.
+	else{ // Agac dolu ise girilen deger roottan buyuk veya kucuk olma durumuna gore eklemek icin kontrol ettik 
+		if (r->data <= deger) //Roottan buyuk veya esit ise sag dala yonlendirip recursive fonksiyon kullanarak ekleme yaptik.
 			r->right = ekle(r->right, deger);
-		else // kökten küçük ise sol dala yönlendirip recursive fonksiyon kullanarak ekleme yaptýk.
+		else // Roottan kucuk ise sol dala yonlendirip recursive fonksiyon kullanarak ekleme yaptik.
 			r->left = ekle(r->left, deger);
 	}
 	return r;
 }
 
-tree *inorder(tree *r) // Kök ortada LNR ( Left - Node - Right ) küçükten büyüðe sýraladý. Büyükten küçüðe sýralamak isterseniz RNL olarak kullanýnýz.
+tree *inorder(tree *r) // Root ortada LNR ( Left - Node - Right ) kucukten buyuge siraladi. Buyukten kucuge siralamak isterseniz RNL olarak kullaniniz.
 {
 	
 	if (r != NULL)
@@ -61,7 +61,7 @@ tree *inorder(tree *r) // Kök ortada LNR ( Left - Node - Right ) küçükten büyüðe
 		return NULL;
 }
 
-tree *preorder(tree *r) // Kök baþta NLR ( Node - Left - Right )
+tree *preorder(tree *r) // Root basta NLR ( Node - Left - Right )
 {
 	if (r != NULL)
 	{
@@ -74,7 +74,7 @@ tree *preorder(tree *r) // Kök baþta NLR ( Node - Left - Right )
 		return NULL;
 }
 
-tree *postorder(tree *r) // Kök sonda LRN ( Left - Right - Node )
+tree *postorder(tree *r) // Root sonda LRN ( Left - Right - Node )
 {
 	if (r != NULL)
 	{
@@ -87,7 +87,7 @@ tree *postorder(tree *r) // Kök sonda LRN ( Left - Right - Node )
 		return NULL;
 }
 
-tree *max(tree *r) // Oluþturduðumuz aðacýn en saðýndaki elemaný bulduk. En saðdaki eleman max deðere eþit.
+tree *max(tree *r) // Olusturdugumuz agacin en sagindaki elemani bulduk. En sagdaki eleman max degere esit.
 {
 	if (r != NULL)
 	{
@@ -108,7 +108,7 @@ tree *max(tree *r) // Oluþturduðumuz aðacýn en saðýndaki elemaný bulduk. En saðd
 	}
 }
 
-tree *min(tree *r) // Oluþturduðumuz aðacýn en solundaki elemaný bulduk. En solundaki eleman min deðere eþit.
+tree *min(tree *r) // Olusturdugumuz agacin en solundaki elemani bulduk. En solundaki eleman min degere esit.
 {
 	if (r != NULL)
 	{
@@ -227,4 +227,4 @@ int main()
 	system("pause");
 }
 
-// Code writer : Hasan BAÞKURT
+// Code writer : Hasan BASKURT

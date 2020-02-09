@@ -76,12 +76,12 @@ int main()
 	ekle(4);
 	gezin();
 	system("pause");	
-	ekle(17); // Dizi de boþ alan kalmadýðý için uyarý verdi ve ekleme yapmadý.
+	ekle(17); // Dizi de bos alan kalmadigi icin uyari verdi ve ekleme yapmadi.
 	system("pause");
-	sil(28); // dizi de eleman olmayýnca uyarý verdi
+	sil(28); // dizi de eleman olmayinca uyari verdi
 	gezin();
 	system("pause");
 	return 0;
 }
 
-// Code writer: Hasan BAÞKURT
+// Code writer: Hasan BASKURT

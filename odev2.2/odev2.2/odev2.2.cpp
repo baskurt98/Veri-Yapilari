@@ -1,8 +1,8 @@
 #include "stdafx.h"
 #include <iostream>
-#include <string> // string iþlemler
-#include <fstream> //dosya iþlemleri
-#include<locale.h> //türkçe karakter kullanmak için
+#include <string> // string islemler
+#include <fstream> //dosya islemleri
+#include<locale.h> //turkce karakter kullanmak icin
 #include <stdio.h>
 using namespace std;
 
@@ -12,7 +12,7 @@ struct node {
 	node *prev;
 };
 
-void dhyaz(node *r) //program kapatýlýrken en son yapýlan iþlemler güncel haliyle dosyaya aktarmak için kullandým.
+void dhyaz(node *r) //program kapatilirken en son yapilan islemler guncel haliyle dosyaya aktarmak icin kullandim.
 {
 	ofstream yaz("iller.txt");
 	node *yrd;
@@ -49,7 +49,7 @@ node *ekle(node *r, string x) {
 	dhyaz(r);
 	return r;
 }
-node *dlistele(node *r) // Program açýldýðýnda dosyada olanlarý listeye aktarma iþlemi için oluþturdum.
+node *dlistele(node *r) // Program acildiðinda dosyada olanlari listeye aktarma islemi icin olusturdum.
 {
 	string okunan;
 	ifstream oku;
@@ -86,7 +86,7 @@ node *arama(node *r, string ne)
 
 }
 
-node *ilArama(node *r, string ne) // Ýl ararken ekrana çýktý almak için ayrý bir arama fonksiyonu oluþturdum.
+node *ilArama(node *r, string ne) // il ararken ekrana cikti almak icin ayri bir arama fonksiyonu olusturdum.
 {
 	if (r == NULL)
 	{
@@ -171,10 +171,10 @@ void gezin(node *r)
 }
 int main()
 {
-	setlocale(LC_ALL, "Turkish"); //Console 'da türkçe karakter kullanýmý ile daha iyi görünüm saðlamak için kullandým.
+	setlocale(LC_ALL, "Turkish"); //Console 'da turkce karakter kullanimi ile daha iyi gorunum saglamak icin kullandim.
 	node *root;
 	root = NULL;
-	root = dlistele(root); // dosyadakileri listeye aktardým ve liste üzerinde iþlem yapacaðým.
+	root = dlistele(root); // dosyadakileri listeye aktardim ve liste uzerinde islem yapacagim.
 	node *yrd;
 	char m;
 	string ilSil, ilEkle, aranan;
@@ -272,8 +272,8 @@ int main()
 
 
 	system("pause");
-	dhyaz(root); //liste üzerinde iþlemler bitti artýk dosyam en güncel halinde.
+	dhyaz(root); //liste uzerinde islemler bitti artik dosyam en guncel halinde.
 	return 0;
 }
 
-// Code writer: Hasan BAÞKURT
+// Code writer: Hasan BASKURT

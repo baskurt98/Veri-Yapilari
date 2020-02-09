@@ -1,9 +1,9 @@
 #include <iostream>
-#include <cstring> // string iþlemler
-#include <fstream> //dosya iþlemleri
-#include<locale.h> //türkçe karakter kullanmak için
-#include <conio.h> // dosya ad deðiþikliði
-#include <iomanip> // setw kullanmak için
+#include <cstring> // string islemler
+#include <fstream> //dosya islemleri
+#include<locale.h> //turkçe karakter kullanmak icin
+#include <conio.h> // dosya ad degisikligi
+#include <iomanip> // setw kullanmak icin
 #include <stdio.h>
 using namespace std;
 void pduzenle(int sayi);
@@ -85,7 +85,7 @@ class personel1{
 	k=kimlik.length();
 	while(k!=11)
 	{
-		fflush(stdin); // Tab boþluðuna da kabul ediyor !
+		fflush(stdin); // Tab bosluguna da kabul ediyor !
 		cout<<"Lutfen kimlik bilgisini 11 haneli giriniz:";
 		getline(cin,kimlik);
 		k=kimlik.length();
@@ -138,7 +138,7 @@ void parama()
 	
     while(!oku.eof())
 	{
-	oku>>a; //satýrýn ilk kelimesindeki sayiyi int a degerine atadik.
+	oku>>a; //satirin ilk kelimesindeki sayiyi int a degerine atadik.
 	getline(oku,okunan);
 	if(a==x)
 	{ 
@@ -192,7 +192,7 @@ class personel2{
 	
     while(!oku.eof())
 	{
-	oku>>a; //satýrýn ilk kelimesindeki sayiyi int a degerine atadik.
+	oku>>a; //satirin ilk kelimesindeki sayiyi int a degerine atadik.
 	getline(oku,okunan);
 	if(a==x)
 	{
@@ -264,7 +264,7 @@ class personel2{
 	
     while(!oku.eof())
 	{
-	oku>>a; //satýrýn ilk kelimesindeki sayiyi int a degerine atadik.
+	oku>>a; //satirin ilk kelimesindeki sayiyi int a degerine atadik.
 	getline(oku,okunan);
 	if(a==yaz(x))
 	{
@@ -294,7 +294,7 @@ class personel2{
 
 //**********************************************************************************************************************
 
-class personel : public personel1 , public personel2{ //Çoklu kalýtým !
+class personel : public personel1 , public personel2{ //Coklu kalitim !
 	public:
 		personel();
 		~personel();
@@ -365,7 +365,7 @@ void uarama()
 	
     while(!oku.eof())
 	{
-	oku>>a; //satýrýn ilk kelimesindeki sayiyi int a degerine atadik.
+	oku>>a; //satirin ilk kelimesindeki sayiyi int a degerine atadik.
 	getline(oku,okunan);
 	if(a==x)
 	{ 
@@ -401,7 +401,7 @@ int usil()
 	
     while(!oku.eof())
 	{
-	oku>>a; //satýrýn ilk kelimesindeki sayiyi int a degerine atadik.
+	oku>>a; //satirin ilk kelimesindeki sayiyi int a degerine atadik.
 	getline(oku,okunan);
 	if(a==x)
 	{
@@ -481,7 +481,7 @@ int uguncelleme()
 	
     while(!oku.eof())
 	{
-	oku>>a; //satýrýn ilk kelimesindeki sayiyi int a degerine atadik.
+	oku>>a; //satirin ilk kelimesindeki sayiyi int a degerine atadik.
 	getline(oku,okunan);
 	if(a==x)
 	{
@@ -549,7 +549,7 @@ class stok{
 	
     while(!oku.eof())
 	{
-	oku>>a; //satýrýn ilk kelimesindeki sayiyi int a degerine atadik.
+	oku>>a; //satirin ilk kelimesindeki sayiyi int a degerine atadik.
 	getline(oku,okunan);
 	if(a==x)
 	{
@@ -724,3 +724,5 @@ void uduzenle(int sayi)
 		remove("urun.txt");
 		rename("urunyedek.txt","urun.txt");
 }
+
+//Code writer: Hasan BASKURT

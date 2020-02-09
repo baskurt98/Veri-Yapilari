@@ -70,4 +70,4 @@ void main(){
 
 }
 
-// Code writer: Hasan BAÞKURT
+// Code writer: Hasan BASKURT

@@ -41,4 +41,4 @@ int main()
 	system("pause");
 }
 
-// Code writer: Hasan BAÞKURT
+// Code writer: Hasan BASKURT

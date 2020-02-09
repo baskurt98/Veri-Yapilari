@@ -90,9 +90,9 @@ node *arayaekle(node *r, int x, int hangiara)
 	return r;
 }
 
-node *sýrala(node *r, int deger)  // Baþa , araya ve sona eklemek için oluþturduðum fonksiyonlarý burada kullandým.
+node *sýrala(node *r, int deger)  // Basa , araya ve sona eklemek icin olusturdugum fonksiyonlari burada kullandim.
 {
-	if (r == NULL || r->data >= deger) // Eðer root boþ ise ekle,root' un datasý girilen degerden büyük veya eþit ise baþa ekle çalýþacak.
+	if (r == NULL || r->data >= deger) // Eger root bos ise ekle,root' un datasi girilen degerden buyuk veya esit ise basa ekle calýsacak.
 	{
 		if (r == NULL)
 			r = ekle(r, deger);
@@ -108,7 +108,7 @@ node *sýrala(node *r, int deger)  // Baþa , araya ve sona eklemek için oluþturdu
 
 		while (yrd != NULL)
 		{
-			if (yrd->data >= deger) // Yardýmcýný datasý girilen degerden büyük veya eþit ise araya ekle çalýþacak.
+			if (yrd->data >= deger) // Yardimcinin datasi girilen degerden buyuk veya esit ise araya ekle calýsacak.
 			{
 				r = arayaekle(r, deger, yrd->data);
 				return r;
@@ -116,7 +116,7 @@ node *sýrala(node *r, int deger)  // Baþa , araya ve sona eklemek için oluþturdu
 
 			yrd = yrd->next;
 
-			if (yrd == NULL) // Eðer son eleman gelmiþsek ve bu sürece kadar deger araya veya baþa yerleþmemiþ ise en sona eklenicek.
+			if (yrd == NULL) // Eger son elemana gelmissek ve bu surece kadar deger araya veya basa yerlesmemis ise en sona eklenicek.
 			{
 				r = ekle(r, deger);
 				return r;
@@ -138,7 +138,7 @@ int main()
 	cout << "Kac elamanli bir liste istersin ?\n Gir:";
 	cin >> listedegeri;
 
-	for (int i = 0; i < listedegeri; i++) // Her adýmda random deðer oluþturup bunu sýralama fonksiyona atadýk ve bu süreçte neler olduðu gözlemlemek için ekrana yazdýrdýk.
+	for (int i = 0; i < listedegeri; i++) // Her adimda random deger olusturup bunu siralama fonksiyona atadik ve bu surecte neler oldugu gozlemlemek icin ekrana yazdirdik.
 	{
 		deger = rand() % 9 + 1;
 		root = sýrala(root, deger);
@@ -153,4 +153,4 @@ int main()
 	return 0;
 }
 
-//Code Writer: Hasan BAÞKURT
+//Code Writer: Hasan BASKURT

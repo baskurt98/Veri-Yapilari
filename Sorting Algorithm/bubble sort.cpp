@@ -28,4 +28,4 @@ for(int i=0;i<10;i++)
 cout<<x[i]<<endl;
 }
 
-// Code writer: Hasan BAÞKURT
+// Code writer: Hasan BASKURT
